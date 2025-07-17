@@ -40,10 +40,10 @@ try:
         try:
             ftp = ftplib.FTP(ipAddr, timeout=5)
             ftp.login('anonymous', '')
-            print(f'{ipAddr} anonymous login *SUCCESS*.')
+            print(f'{ipAddr} anonymous login \033[92msuccess\033[0m')
             ftp.quit()
         except Exception:
-            print(f'{ipAddr} anonymous login FAILED.')
+            print(f'{ipAddr} anonymous login failed')
 
     elif options.l:
         tryLogin(options.l)
