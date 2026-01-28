@@ -23,7 +23,7 @@ It's designed to fit into recon workflows or work as a standalone tool for quick
 
 ## Usage
 
-```bash
+```
 ./ftpeeky.py -i [IP Address]
 ./ftpeeky.py -l [IP Address List] 
 
