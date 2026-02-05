@@ -30,4 +30,3 @@ It's designed to fit into recon workflows or work as a standalone tool for netwo
 ./ftpeeky.py targets.txt -c
 ./ftpeeky.py 10.0.0.1 -t 5 -c
 ```
-
