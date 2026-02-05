@@ -1,7 +1,7 @@
 # FTPeeky
 
 FTPeeky is a lightweight Python script that scans one or more IP addresses for anonymous FTP login access.  
-It's designed to fit into recon workflows or work as a standalone tool for quick assessments.
+It's designed to fit into recon workflows or work as a standalone tool for network assessments.
 
 ---
 
@@ -21,21 +21,13 @@ It's designed to fit into recon workflows or work as a standalone tool for quick
 
 ---
 
-## Usage
+## Usage Examples
 
 ```bash
-./ftpeeky.py -i [IP Address]
-./ftpeeky.py -l [IP Address List] 
 
-Options:
-  -h, --help show this help message and exit
-  -i         Single IP to scan
-  -l         List of IPs to scan
-  -t         Timeout in seconds (default 5)
-  -c         List contents in root directory of server
-
-Examples:
-./ftpeeky.py -i 192.168.1.5
-./ftpeeky.py -l iplist.lst -c -t 2
+./ftpeeky.py 192.168.1.1
+./ftpeeky.py 192.168.1.0/24 -t 10
+./ftpeeky.py targets.txt -c
+./ftpeeky.py 10.0.0.1 -t 5 -c
 ```
 
