@@ -4,7 +4,6 @@ import ftplib
 import argparse
 import ipaddress
 import sys
-#import time
 from rich.progress import track
 
 
@@ -66,18 +65,10 @@ def tryLogin(target,timeoutValue,contentsValue):
             for f in files:
                 print(f)
                 ftp.quit()
-               # successList.append(target)
         return target
         
     except Exception:
         pass
-            #print(f'{target} anonymous login failed')
-
-    #if successList:
-     #   with open('successful_anon_ftp.txt', 'w') as outFile:
-      #      for ip in successList:
-       #         outFile.write(ip + '\n')
-        #print(f'[+] Saved successful logins to successful_anon_ftp.txt')
 
 if __name__ == "__main__":
         parser = argparse.ArgumentParser(
